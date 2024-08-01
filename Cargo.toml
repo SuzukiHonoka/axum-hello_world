@@ -1,0 +1,15 @@
+[package]
+name = "axum-hello_world"
+version = "0.1.0"
+edition = "2021"
+authors = ["starx"]
+description = "Hello World with Axum: A practice project using the Tokio ecosystem, including signal handling"
+
+
+[dependencies]
+axum = "0.7.5"
+tokio = { version= "1.39.2", features = ["rt-multi-thread", "signal"]}
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+serde = "1.0.204"
+tokio-stream = "0.1.15"
